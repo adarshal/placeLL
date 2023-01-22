@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/show_table.css">
+<table id="show-table">
+    <tr>
+        <th>Company Name</th>
+        <th>Date</th>
+      </tr>
+<% for(company of interviews){ %>
+<tr>
+    <td><%=company.company%></td>
+    <td><%=company.date%></td>
+    <td><a href="./add/students/<%= company.id %>" >add students</a></td>
+</tr>
+    
+    <% } %>
+</table>

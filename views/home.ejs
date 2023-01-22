@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/home.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<h3>PlaceLL Home page</h3>
+<div id="home-container">
+
+
+    <% if(locals.user){ %>
+        <br>
+        <div>
+        <h3>New Addition</h3>
+        <a href="/create/interview" class="fancy-button bg-gradient1"><span><i class="fa fa-plus"></i>Create Interview</span></a>
+        <a href="/create/student" class="fancy-button bg-gradient1"><span><i class="fa fa-plus"></i>Add student</span></a>
+    </div>
+    <br><br>
+    <hr>
+    
+    <div class="div-2">
+        <h3>view and edit old</h3>
+        <!-- <a  href="/create/interview" class="fancy-button bg-gradient2"><span><i class="fa fa-plus"></i></span> Create Interview </a>
+        <a href="/create/student" class="fancy-button bg-gradient1"> Add Student </a> -->
+        <a href="/view/student" class="fancy-button bg-gradient2"><span> view all Student </span> </a>
+        <a href="/view/interview" class="fancy-button pop-onhover bg-gradient3"><span><i class="fa fa-pencil"></i>view all interviews & add students </span></a> 
+        
+    </div>
+    <hr>
+    <div>
+        <a href="/download" class="fancy-button pop-onhover bg-gradient4"><span> Download csv </span></a>
+    </div>
+        <% } else{ %>
+
+
+<h1> Hi there, Please Login or signup</h1>
+<% } %>
+</div>
+
+
+
+

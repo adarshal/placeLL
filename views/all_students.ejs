@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/show_table.css">
+<table id="show-table">
+    <tr>
+        <th>Student Name</th>
+        <th>Batch</th>
+        <th>college</th>
+        <th>Placed</th>
+      </tr>
+<% for(st of students){ %>
+<tr>
+    <td><%=st.name%></td>
+    <td><%=st.batch%></td>
+    <td><%=st.college%></td>
+    <td><%=st.placed%></td>
+</tr>
+    
+    <% } %>
+</table>

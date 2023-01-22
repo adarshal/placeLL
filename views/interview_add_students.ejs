@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/css/interviewaddstudent.css">
+<link rel="stylesheet" href="/css/show-table.css">
+<div id="main-cont">
+    <!-- <%= interview.id %> -->
+    <h1>
+        <%= interview.company %>
+    </h1>
+    <h3>You can add below students</h3>
+    <table id="show-table1">
+        <tr>
+            <th>Student Name</th>
+            <th>DSA</th>
+            <th>WebD</th>
+            <th>React</th>
+            <th>placed</th>
+        </tr>
+        <% for(stud of students){ %>
+            <form action="./interviewaddstudent" method="POST">
+                <!-- <div class="form-group mb-4"> -->
+                <tr>
+                    <td><label class="form-label">
+                            <%=stud.name %>
+                        </label></td>
+                    <td>
+                        <%=stud.dsa %>
+                    </td>
+                    <td>
+                        <%=stud.webd %>
+                    </td>
+                    <td>
+                        <%=stud.react %>
+                    </td>
+                    <td>
+                        <%=stud.placed %>
+                    </td>
+
+
+                    <input type="hidden" name="student" value="<%= stud._id %>" style="display:none" ;>
+                    <input type="hidden" name="interview" value="<%= interview._id %>" style="height:0px">
+
+                    <td><button type="submit" class="btn">ADD student</button></td>
+                </tr>
+                <!-- </div> -->
+            </form>
+
+
+
+            <%}%>
+    </table>
+</div>
+<aside>
+    <h2> Previously added students</h2>
+    <% for(en of enrolled){ %>
+        <marque>
+            <%=en.name%>
+        </marque>
+        <%}%>
+            <br><br>
+</aside>

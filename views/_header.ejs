@@ -1,0 +1,45 @@
+
+   
+
+<header>
+    <div id="head-container">
+    <div id="head-logo">
+        <!-- <a href="https://www.flaticon.com/free-animated-icons/customer-service" title="customer service animated icons">Customer service animated icons created by Freepik - Flaticon</a> -->
+        <a href="/" style="color: aqua;text-decoration: none;"><p> <img src="https://cdn-icons.flaticon.com/svg/5069/5069162.svg?token=exp=1674351293~hmac=9414cce5414eaf76481e7da6cd9aa423" alt="">
+        PlaceLL </p></a>
+</div>
+<ul>
+    <li class="header-li">
+        <a href="/">
+          HOME  </a>
+    </li>
+    <% if(locals.user){ %>
+        <li class="header-li">
+            <%= user.name %>
+        </li>
+        
+        <li class="header-li">
+            <a href="/users/profile/<%=locals.user.id %>">
+                Profile
+             </a>
+        </li>
+        <li class="header-li">
+            <a href="/users/signout">
+              Sign Out </a>
+        </li>
+        
+        <% } else{ %>
+
+            <li class="header-li">
+                <a href="/users/signin">Signin</a>
+            </li>
+            <li class="header-li">
+                <a href="/users/signup"> Sign Up</a>
+            </li>
+            
+            
+       <% } %>
+</ul>
+</div>
+</header>
+
