@@ -62,14 +62,17 @@ add students
 ![image](https://user-images.githubusercontent.com/89533221/213900351-fcd347de-78d8-4485-bc90-a810089b45aa.png)
 
 <br>
+
 view all students
 ![image](https://user-images.githubusercontent.com/89533221/213900363-f641e6fd-d498-48e7-9d9c-b3959b7a5dda.png)
 
 <br>
+
 view interview and add studnts to it link
 ![image](https://user-images.githubusercontent.com/89533221/213900376-7f3c9a23-0895-4688-83b6-8b6ef977669b.png)
 
 <br>
+
 add student to particular interview
 ![image](https://user-images.githubusercontent.com/89533221/213900386-748bc250-821d-4e33-83a0-f3c5adcfe97e.png)
 
